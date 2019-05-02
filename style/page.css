@@ -1,0 +1,31 @@
+body,
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.background {
+	width: 100%;
+    
+    background-image: url(../images/bgc.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+.h1 {
+    opacity: 1;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    color: blue;
+    text-shadow: 3px 2px yellow;
+}
+.pretext {
+    text-align: center;
+    color: blue;
+}
+.don {
+    text-align: center;
+    
+}
