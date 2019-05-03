@@ -1,11 +1,13 @@
 body,
-*{
+* {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
 .nav {
     height: 5.75em;
     display: flex;
@@ -13,14 +15,17 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .pagename {
     font-size: 1em;
     color: #000080;
 }
+
 .topnav {
     overflow: hidden;
     background-color: #000080;
 }
+
 .topnav a {
     float: left;
     display: block;
@@ -30,19 +35,23 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
+
 .topnav a:hover {
     background-color: #FFD700;
     color: black;
 }
+
 .topnav .icon {
     display: none;
 }
+
 .background {
     max-width: 100%;
     min-height: 100vh;
     background-image: url(../images/bgg.jpg);
-    background-size: auto ;
+    background-size: auto;
 }
+
 .h1 {
     opacity: 1;
     text-transform: uppercase;
@@ -52,20 +61,71 @@ body {
     text-shadow: 3px 2px #FFD700;
     margin: 0px;
 }
+
 .pretext {
     text-align: center;
     color: #000080;
 }
+
 .text {
     text-align: justify;
     margin: 10px;
 }
+
 .img {
     text-align: center;
 }
+
 .don {
     text-align: center;
 }
+
+.topnav ul>li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav ul>li a:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.hidden-nav {
+    display: none;
+}
+
+.show-menu {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .pagename {
+        font-size: 2em;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .pagename {
         font-size: 2em;
@@ -76,9 +136,58 @@ body {
     .nav {
         height: 12em;
     }
+
     .topnav {
         display: flex;
         flex-direction: column;
     }
+}
 
+@media screen and (max-width : 768px) {
+    .nav {
+        height: 12em;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .show-menu {
+        text-decoration: none;
+        width: 60px;
+        color: gold;
+        background: navy;
+        text-align: center;
+        padding: 5px 0;
+        display: block;
+    }
+
+    input[type=checkbox]:checked~#menu {
+        display: block;
+    }
+
+    #menu {
+        list-style: none;
+        padding: 0 20px;
+    }
+
+    #menu li>a {
+        padding: 1px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        position: static;
+        display: none;
+    }
+
+    li {
+        margin-bottom: 1px;
+    }
+
+    ul li,
+    li a {
+        width: 100%;
+    }
 }

@@ -8,6 +8,7 @@ After you're done, upload your project folder on github and submit the url to yo
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,27 +16,39 @@ After you're done, upload your project folder on github and submit the url to yo
     <title>Mai's Favorite Books</title>
     <link rel="stylesheet" href="style/stylehome.css" />
 </head>
+
 <body>
     <header>
         <nav class="nav">
-            <span class="pagename">Mai's Favorite Books</span>
-            <span class="topnav" id="myTopnav">
-                <a href="#home">HOME</a>
-                <a href="fav.html">FAVORITE BOOKS</a>
-                <a href="toread.html">TO-READ LIST</a>
-                <a href="don.html">DONATION</a>
+            <span class="pagename"><a href="home.html">Mai's Favorite Books</a></span>
+            <label for="show-menu" class="show-menu">MENU</label>
+            <span class="topnav">
+                <input type="checkbox" id="show-menu" role="button">
+                <ul class="nav-links">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="fav.html">FAVORITE BOOKS</a></li>
+                    <li><a href="toread.html">TO-READ LIST</a></li>
+                    <li><a href="don.html">DONATION</a></li>
+                </ul>
+                <ul id="menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="fav.html">FAVORITE BOOKS</a></li>
+                    <li><a href="toread.html">TO-READ LIST</a></li>
+                    <li><a href="don.html">DONATION</a></li>
+                </ul>
             </span>
         </nav>
     </header>
     <main>
         <div class="background">
             <div class="box">
-            <p class="intro">Welcome to my personal book list!</p>
+                <p class="intro">Welcome to my personal book list!</p>
             </div>
         </div>
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>

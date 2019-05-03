@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Donate to me</title>
-    <link rel="stylesheet" href="style/page.css"/>
+    <link rel="stylesheet" href="style/page.css" />
 </head>
+
 <body>
-        <header>
-                <nav class="nav">
-                    <span class="pagename"><a style="text-decoration:none" href="home.html">Mai's Favorite Books</a></span>
-                    <span class="topnav" id="myTopnav">
-                        <a href="home.html">HOME</a>
-                        <a href="fav.html">FAVORITE BOOKS</a>
-                        <a href="toread.html">TO-READ LIST</a>
-                        <a href="don.html">DONATION</a>
-                    </span>
-                </nav>
-            </header>
+    <header>
+        <nav class="nav">
+            <span class="pagename"><a href="home.html">Mai's Favorite Books</a></span>
+            <label for="show-menu" class="show-menu">MENU</label>
+            <span class="topnav">
+                <input type="checkbox" id="show-menu" role="button">
+                <ul class="nav-links">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="fav.html">FAVORITE BOOKS</a></li>
+                    <li><a href="toread.html">TO-READ LIST</a></li>
+                    <li><a href="don.html">DONATION</a></li>
+                </ul>
+                <ul id="menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="fav.html">FAVORITE BOOKS</a></li>
+                    <li><a href="toread.html">TO-READ LIST</a></li>
+                    <li><a href="don.html">DONATION</a></li>
+                </ul>
+            </span>
+        </nav>
+    </header>
     <div class="background">
         <h1 class="h1"><br>DONATE TO ME</h1>
-        <p class="pretext">If you are enjoying this page, you can donate to me by clicking the button below. Your donation will be used to buy more books.<br>Soon you will be able to contact me via a form to request a specific book that you would like me to read and review.</p>
+        <p class="pretext">If you are enjoying this page, you can donate to me by clicking the button below. Your
+            donation will be used to buy more books.<br>Soon you will be able to contact me via a form to request a
+            specific book that you would like me to read and review.</p>
         <div class="don">
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_donations" />
                 <input type="hidden" name="business" value="RZCCBPTKSLNJC" />
                 <input type="hidden" name="currency_code" value="EUR" />
-                <input type="image" src="https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif" border="0"
+                    name="submit" title="PayPal - The safer, easier way to pay online!"
+                    alt="Donate with PayPal button" />
                 <img alt="" border="0" src="https://www.paypal.com/en_NL/i/scr/pixel.gif" width="1" height="1" />
             </form>
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>
