@@ -9,7 +9,7 @@ body {
 .nav {
     height: 5.75em;
     display: flex;
-    padding: 25px;
+    padding: 0px;
     justify-content: space-between;
     align-items: center;
 }
@@ -60,4 +60,14 @@ body {
     .pagename {
         font-size: 2em;
     }
+}
+@media screen and (max-width: 600px) {
+    .nav {
+        height: 12em;
+    }
+    .topnav {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

@@ -9,7 +9,7 @@ body {
 .nav {
     height: 5.75em;
     display: flex;
-    padding: 25px;
+    padding: 0px;
     justify-content: space-between;
     align-items: center;
 }
@@ -50,6 +50,7 @@ body {
     text-align: center;
     color: #000080;
     text-shadow: 3px 2px #FFD700;
+    margin: 0px;
 }
 .pretext {
     text-align: center;
@@ -67,4 +68,14 @@ body {
     .img {
         text-align: center;
     }
+}
+@media screen and (max-width: 600px) {
+    .nav {
+        height: 12em;
+    }
+    .topnav {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
